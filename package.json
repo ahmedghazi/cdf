@@ -8,11 +8,11 @@
   },
   "config": {
     "host": "http://localhost",
-    "port": 3001,
+    "port": 3002,
     "session": {
       "secret_key": "secretRadpido2014"
     },
-    "app_db_name": "application"
+    "app_db_name": "cdf"
   },
   "dependencies": {
     "express": "~4.0.0",

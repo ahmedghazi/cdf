@@ -3,8 +3,7 @@ var ApiController = function(app) {
     this.router = express.Router();
     var mongoose = require('mongoose');
     var ObjectId = mongoose.Schema.ObjectId;
-    var Cdf = app.getModel('Cdf'); 
-    var Helpers = require('helpers');
+    var Cdf = app.getModel('Cdf');
 
     // Routes
 
