@@ -1,0 +1,15 @@
+extends ../layout
+
+prepend content
+    div.forms
+        form(action="/security/login", method="POST")
+            div.form-group
+                input.form-control(type="email", name="email", id="email", placeholder="Email", value=email)
+            div.form-group
+                input.form-control(type="password", name="password", id="password", placeholder="Password")
+            div.form-group
+                button.btn.btn-primary Login
+
+            if errors
+                div.form-group
+                    a(class='btn btn-primary', href='/security/signup') Signup

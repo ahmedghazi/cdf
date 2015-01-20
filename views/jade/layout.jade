@@ -1,0 +1,35 @@
+doctype html
+html(ng-app="app" ng-controller="appCtrl")
+    head
+        base(href="/")
+        title=title
+        block links
+            link(rel='stylesheet', href='//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css')
+            link(rel='stylesheet', href='stylesheets/style.css')
+        
+    body(class=getLocale())
+        div#wrapper.hidden
+            header
+                div.float_left
+                    h1 
+                        a(href='/') #{title}
+                
+            div.content
+                block content
+            
+            footer
+                div.float_left
+                    ul
+                        li
+                            a(href='/about') About
+                        li
+                            a(href='/contact') Contact
+
+        script(src='/javascripts/jquery.min.js')
+        script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
+               
+        script(src='/javascripts/packery.pkgd.min.js')
+        script(src='/javascripts/plugins.js')
+        script(src='/javascripts/Vignette.js')
+        script(src='/javascripts/App.js')
+        script(src='/javascripts/functions.js')

@@ -1,0 +1,13 @@
+extends ../layout
+
+prepend content
+    div.forms
+        form(action="/security/signup", method="POST")
+            div.form-group
+                label(for="email")
+                input.form-control(type="email", name="email", id="email", placeholder="Email", value=email)
+            div.form-group
+                label(for="password")
+                input.form-control(type="password", name="password", id="password", placeholder="Password")
+            
+            button.btn.btn-primary Signup
