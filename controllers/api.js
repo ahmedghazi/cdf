@@ -24,6 +24,7 @@ var ApiController = function(app) {
         var cdf = new Cdf({
             title:req.body.title,
             pages:req.body.pages,
+            size:req.body.size.toLowerCase(),
             date: new Date()
         });
 
@@ -48,8 +49,9 @@ var ApiController = function(app) {
 //console.log(Helpers)
             cdf.title = req.body.title;
             cdf.pages = req.body.pages;
+            cdf.size = req.body.size.toLowerCase();
             //cdf.content = req.body.content;
-            console.log(req.body.content)
+            //console.log(req.body.content)
             cdf.content_version.push(req.body.content);
 //console.log(cdf.content_version.length)
             cdf.save(function (err) {

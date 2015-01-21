@@ -16,7 +16,7 @@ var HomeController = function(app) {
             if (err) {
                 //return next(err);
             }
-
+console.log(cdf)
             return res.render('cdf', {
                 title: app.get('title'),
                 cdf: cdf

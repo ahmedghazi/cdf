@@ -11,6 +11,8 @@ app.set('appDbName', 'cdf');
 //boot the app
 app.boot();
 
+console.log("start app")
+
 //register some models
 app.registerModel('User', 'user');
 app.registerModel('Option', 'option');

@@ -3,8 +3,8 @@ extends layout
 block content
     include form-update
     div.clear
-    div#grid_wrapper
-
+    
+    div(class='#{cdf.size}')#grid_wrapper
         - var page = 1;
         include vignette-cover
 
