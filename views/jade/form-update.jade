@@ -1,14 +1,15 @@
 form(name="update", action="/api/u", method="post", class='#{cdf.size}')
     input(type="hidden", name="id" value="#{cdf._id}")
     input(type="hidden", name="content" value="")
+    input(type="hidden", name="size" value="#{cdf.size}")
     div.form-group
         input(type="text", name="title" placeholder="Cdf title" value="#{cdf.title}")
     div.form-group.gap
         input(type="text", name="pages" placeholder="Number of pages" value="#{cdf.pages}")
-    div.form-group
-        select(name='size')
-            option(value="small", selected=('small' == cdf.size)) SMALL
-            option(value="big", selected=('big' == cdf.size)) BIG
+    //div.form-group
+    //    select(name='size')
+    //        option(value="small", selected=('small' == cdf.size)) SMALL
+    //        option(value="big", selected=('big' == cdf.size)) BIG
     div.form-group
         input(type="submit", value="Update")
     div.form-group
