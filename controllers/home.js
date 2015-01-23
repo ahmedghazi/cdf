@@ -5,7 +5,7 @@ var HomeController = function(app) {
 
     //Listen for route /
     this.router.get('/', function(req, res) {
-        return res.render('new', {
+        return res.render('index', {
             title: app.get('title')
         });
     });
@@ -16,7 +16,7 @@ var HomeController = function(app) {
             if (err) {
                 //return next(err);
             }
-console.log(cdf)
+
             return res.render('cdf', {
                 title: app.get('title'),
                 cdf: cdf

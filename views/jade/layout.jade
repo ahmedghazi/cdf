@@ -13,7 +13,9 @@ html(ng-app="app" ng-controller="appCtrl")
                 div.float_left
                     h1 
                         a(href='/') #{title}
-                
+                div.float_right
+                    include tool-box
+                    
             div.content
                 block content
             
@@ -28,6 +30,7 @@ html(ng-app="app" ng-controller="appCtrl")
         script(src='/javascripts/jquery.min.js')
         script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
                
+        script(src='/javascripts/colorPicker.js')
         script(src='/javascripts/packery.pkgd.min.js')
         script(src='/javascripts/plugins.js')
         script(src='/javascripts/Vignette.js')
