@@ -3,9 +3,9 @@ form(name="update", action="/api/u", method="post", class='#{cdf.size}')
     input(type="hidden", name="content" value="")
     input(type="hidden", name="size" value="#{cdf.size}")
     div.form-group
-        input(type="text", name="title" placeholder="Cdf title" value="#{cdf.title}")
+        input(type="text", name="title" placeholder="Cdf title" value="#{cdf.title}", autocomplete="off")
     div.form-group.gap
-        input(type="text", name="pages" placeholder="Number of pages" value="#{cdf.pages}")
+        input(type="text", name="pages" placeholder="Number of pages" value="#{cdf.pages}", autocomplete="off")
     div.form-group
         input(type="submit", value="Update")
     div.form-group
