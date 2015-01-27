@@ -6,13 +6,13 @@ block content
     
     div(class='#{cdf.size}')#grid_wrapper
         - var page = 1;
-        //include vignette-cover
+        include vignette-cover
 
-        - var numPages = (cdf.pages)/2;
+        - var numPages = (cdf.pages-2)/2;
         - for (var page=1; page<=numPages; page++)
             - var left = page + 1;
             - var right = page + 2;
             include vignette-page
 
         - var page = cdf.pages;
-        //include vignette-backcover
+        include vignette-backcover
