@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+    include form-update
+    div.clear
+    div(class='#{cdf.size}')#grid_wrapper
+        !{content}
+    div.clear
+    div.sep_20
+    ul.versions
+        - for (var i=1; i<=num_versions; i++)
+            li
+                a(href='/cdf/#{cdf._id}/#{i}') version #{i}
