@@ -13,12 +13,14 @@ module.exports = function (app) {
 
 router.get('/', function(req, res) {
     return res.render('index', {
+
         title: _app.get('title')
+    
     });
 });
 
 router.get('/cdf/:id', function(req, res) {
-    //console.log(req.params.id)
+    console.log(req.params.id)
     return Cdf.findById(req.params.id).exec(function(err, cdf) {
         if (err) {
             //return next(err);
