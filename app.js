@@ -16,7 +16,7 @@ models.forEach(function (model) {
   require(model);
 });
 var app = express();
-app.set('title', 'CDF');
+app.set('title', 'FLATPLAN');
 
 require('./config/express')(app, config);
 

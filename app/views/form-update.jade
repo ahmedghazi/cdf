@@ -2,7 +2,7 @@ form(name="update", action="/api/u", method="post", class='#{cdf.size}')
     input(type="hidden", name="id" value="#{cdf._id}")
     input(type="hidden", name="content" value="")
     div.form-group
-        input(type="text", name="title" placeholder="Cdf title" value="#{cdf.title}", autocomplete="off")
+        input(type="text", name="title" placeholder="FLATPLAN title" value="#{cdf.title}", autocomplete="off")
     div.form-group.gap
         input(type="text", name="pages" placeholder="Number of pages" value="#{cdf.pages}", autocomplete="off")
     div.form-group
