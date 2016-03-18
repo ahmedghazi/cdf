@@ -8,7 +8,7 @@ var config = {
     app: {
       name: 'cdf'
     },
-    port: 3001,
+    port: 3003,
     db: 'mongodb://localhost/cdf-development'
   },
 
@@ -17,7 +17,7 @@ var config = {
     app: {
       name: 'cdf'
     },
-    port: 3001,
+    port: 3003,
     db: 'mongodb://localhost/cdf-test'
   },
 
@@ -26,7 +26,7 @@ var config = {
     app: {
       name: 'cdf'
     },
-    port: 3001,
+    port: 3003,
     db: 'mongodb://localhost/cdf-production'
   }
 };
