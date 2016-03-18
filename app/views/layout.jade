@@ -1,0 +1,38 @@
+doctype html
+html()
+    head
+        base(href="/")
+        title=title
+        block links
+            link(rel='stylesheet', href='//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css')
+            link(rel='stylesheet', href='/css/style.css')
+        
+    body(class='')
+        div#wrapper.hidden
+            header
+                div.float_left
+                    h1 
+                        a(href='/') #{title}
+                div.float_right
+                    include tool-box
+                    
+            div.content
+                block content
+            
+            footer
+                div.float_left
+                    ul
+                        li
+                            a(href='/about') About
+                        li
+                            a(href='/contact') Contact
+
+        script(src='/js/jquery.min.js')
+        script(src='http://code.jquery.com/ui/1.10.3/jquery-ui.js')
+               
+        script(src='/js/colorPicker.js')
+        script(src='/js/packery.pkgd.min.js')
+        script(src='/js/plugins.js')
+        script(src='/js/Vignette.js')
+        script(src='/js/App.js')
+        script(src='/js/functions.js')
