@@ -175,8 +175,10 @@ button{border: 0;padding: 10px;cursor: pointer;}
 .vignette .vignette_page:nth-child(2){margin-left: -1px}
 .vignette_page:hover{
     /*background-color: whitesmoke;*/
-    opacity: 0.5
+    opacity: 0.7;
+    cursor: move;
 }
+.carre:hover{cursor: text}
 
 .cover .vignette_page{float:right;border-left:1px solid #000;}
 .backcover .vignette_page{border-left:1px solid #000;float:left;}
