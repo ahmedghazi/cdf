@@ -2,6 +2,6 @@ form(name="create", action="/api/c", method="post")
     div.form-group
         input(type="text", name="title", placeholder="title", value="", autocomplete="off")
     div.form-group
-        input(type="number", name="pages", placeholder="Number of pages", value="", autocomplete="off")
+        input(type="number", name="pages", placeholder="Number of pages", value="", autocomplete="off" min="0")
     div.form-group
         input(type="submit", value="Create")

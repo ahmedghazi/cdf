@@ -116,7 +116,7 @@ var App = function(){
         });
 
         if($(".vignette").length != 0){
-            $(".vignette_page").eq(0).find('.editable').get(0).click();
+            $(".vignette_page").eq(0).find('.editable').text("Start Here");
         }else{
             //console.log($("input[name=title]"))
             $("input[name=title]").focus();
