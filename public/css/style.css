@@ -197,7 +197,7 @@ button{border: 0;padding: 10px;cursor: pointer;}
 .page_num{
     position: absolute;
     text-align: center;
-    width: 76px;
+    width: 100%;
     bottom:-17px;
     left: 0;
 }
@@ -238,6 +238,9 @@ form.big .gap{margin-right: 60px}
 /* PAGINATION */
 .versions li{float: left; margin-right: 10px}
 
+
+.entry h2{margin-bottom: 1em;}
+.entry p{line-height: 1.3em;}
 /* Media queries!
 -------------------------------------------------------------------------------*/
 

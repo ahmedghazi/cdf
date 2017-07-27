@@ -57,7 +57,7 @@ router.get('/about', function(req, res) {
     return res.render('about', {
         title: _app.get('title'),
         h2: "About",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        content: "FLATPLAN IS A SIMPLE FLATPLAN TOOL.<br/> YOU CAN USE IT BY COPYING PASTING<br/> THE LINK GENERATED IN THE ADDRESS BAR<br/> AND MAKE IT ACCESSIBLE TO CLIENTS/COLLABORATORS."
     });
 });
 
@@ -66,6 +66,6 @@ router.get('/contact', function(req, res) {
     return res.render('contact', {
         title: _app.get('title'),
         h2: "Contact",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        content: ""
     });
 });
