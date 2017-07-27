@@ -136,6 +136,10 @@ input[type="password"]{}
 
 input[type="submit"]{border: 0;padding: 0px;cursor: pointer;}
 input[type="submit"]:hover{text-decoration: underline;}
+input[type="submit"]::disabled{
+    opacity: 0.3;
+    cursor: not-allowed;
+}
 button{border: 0;padding: 10px;cursor: pointer;}
 
 #create-form{float:left;}

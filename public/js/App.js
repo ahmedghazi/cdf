@@ -8,9 +8,33 @@ var App = function(){
         _this.render();
     };
 
+    this.isPair = function(n){
+        return n == parseFloat(n)? !(n%2) : void 0;
+    };
+
     this.bindEvents = function(){
+        console.log($("input[name='pages']"))
+        console.log($("input[type='submit']"))
+        $("input[name='pages']").on("change", function(){
+            var n = this.value;
+            if(_this.isPair(n))
+                $('input[type="submit"]').prop("disabled", false);
+            else
+                $('input[type="submit"]').prop("disabled", true);
+            //$('input[type="submit"]').prop("disabled", true);
+            console.log(this.value)
+            console.log(_this.isPair(n))
+        });
+
         $("form[name='create']").on("submit", function(event){
             event.preventDefault();
+
+            var n = $("input[name='pages']").val();
+            if(!_this.isPair(n)){
+                alert("Only even page number is allowed");
+                return;
+            }
+            
             $.ajax({
                 type: "POST",
                 url: "/api/c",
@@ -25,6 +49,13 @@ var App = function(){
 
         $("form[name='update']").on("submit", function(event){
             event.preventDefault();
+
+            var n = $("input[name='pages']").val();
+            if(!_this.isPair(n)){
+                alert("Only even page number is allowed");
+                return;
+            }
+            
             var id = $('input[name="id"]').val();
             //var content = $("#grid_wrapper").html();
             $('input[name="content"]').val($("#grid_wrapper").html());
